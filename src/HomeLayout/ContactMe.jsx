@@ -1,12 +1,14 @@
 import { useForm } from "react-hook-form";
 import { FaPhoneAlt, FaEnvelope, FaLocationArrow } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
+import img from '../assets/logo2.png';
 import { IoIosSend, IoLogoWhatsapp } from "react-icons/io";
 import { PiPlugsConnectedFill } from "react-icons/pi";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -278,6 +280,77 @@ This message was sent from your portfolio website contact form.
                   </div>
                 </div>
               </div>
+              {/* Image with animated border and corner accents */}
+<div className="relative group perspective-1000">
+  <div className="relative transform-gpu transition-all duration-700 group-hover:rotate-x-5 group-hover:rotate-y-5">
+    {/* Holographic Effect */}
+    <div className="absolute -inset-1 bg-linear-to-br from-[#00084e] via-[#000000] to-[#01014a] opacity-100 blur-xl   group-hover:opacity-70 transition-opacity duration-500"></div>
+    
+    <div className="relative overflow-hidden shadow-2xl py-4">
+      <motion.img 
+        src={img} 
+        className="w-[380px] h-[400px] object-cover brightness-90 contrast-125 group-hover:brightness-110 group-hover:contrast-110 transition-all duration-500"
+        alt=""
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.8 }}
+      />
+      
+      {/* Animated Border Grid */}
+      <div className="absolute inset-0 border-2 border-transparent">
+        {/* Horizontal Lines */}
+        <motion.div 
+          className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-black to-transparent"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        />
+        <motion.div 
+          className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-cyan-400 to-transparent"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, delay: 0.7 }}
+        />
+        
+        {/* Vertical Lines */}
+        <motion.div 
+          className="absolute left-0 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-blue-400 to-transparent"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 1 }}
+          transition={{ duration: 1, delay: 0.9 }}
+        />
+        <motion.div 
+          className="absolute right-0 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-blue-700 to-transparent"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 1 }}
+          transition={{ duration: 1, delay: 1.1 }}
+        />
+      </div>
+    </div>
+  </div>
+  
+  {/* Floating Particles */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    {[...Array(15)].map((_, i) => (
+      <motion.div
+        key={i}
+        className="absolute w-1 h-1 bg-cyan-400 rounded-full"
+        style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+        }}
+        animate={{
+          y: [0, -20, 0],
+          opacity: [0, 1, 0],
+        }}
+        transition={{
+          duration: 2 + Math.random(),
+          repeat: Infinity,
+          delay: i * 0.2,
+        }}
+      />
+    ))}
+  </div>
+</div>
             </div>
 
             {/* RIGHT FORM - PROFESSIONALLY IMPLEMENTED */}

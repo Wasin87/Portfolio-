@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import hero_logo from '../assets/logo2.png'
+import hero_logo from '../assets/W.png'
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { MdOutlineFileDownload } from "react-icons/md";

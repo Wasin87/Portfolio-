@@ -274,8 +274,8 @@ const SkillsIcon = () => {
                         <div
                             key={i}
                             className="bg-linear-to-br from-gray-900/40 to-black/40 backdrop-blur-sm 
-                                       border border-gray-800 rounded-xl p-4 text-center
-                                       hover:border-[#57cbff]/20 hover:transform hover:-translate-y-0.5 
+                                       border border-gray-200 rounded-xl p-4 text-center
+                                       hover:border-[#57ffd8] hover:transform hover:-translate-y-0.5 
                                        transition-all duration-300 group"
                         >
                             <div className="text-2xl font-bold bg-linear-to-r from-[#57cbff] to-[#64ffda] bg-clip-text text-transparent">
