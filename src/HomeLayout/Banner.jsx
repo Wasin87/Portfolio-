@@ -99,7 +99,7 @@ const Banner = () => {
 
                     <div className="flex flex-wrap gap-6 mt-10">
                         <a
-                            href="/Md Wasin Ahmed Resume.pdf"
+                            href="/Md Wasin Ahmed CV.pdf"
                             download
                             className="tech-btn flex items-center gap-3 px-8 py-4 text-lg font-semibold"
                         >
