@@ -289,7 +289,7 @@ This message was sent from your portfolio website contact form.
     <div className="relative overflow-hidden shadow-2xl py-4">
       <motion.img 
         src={img} 
-        className="w-[380px] h-[400px] object-cover brightness-90 contrast-125 group-hover:brightness-110 group-hover:contrast-110 transition-all duration-500"
+        className="w-[350px] h-[370px] ml-4 object-cover brightness-90 contrast-125 group-hover:brightness-110 group-hover:contrast-110 transition-all duration-500"
         alt=""
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.8 }}
