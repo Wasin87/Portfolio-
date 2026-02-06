@@ -284,7 +284,7 @@ This message was sent from your portfolio website contact form.
 <div className="relative group perspective-1000">
   <div className="relative transform-gpu transition-all duration-700 group-hover:rotate-x-5 group-hover:rotate-y-5">
     {/* Holographic Effect */}
-    <div className="absolute -inset-1 bg-linear-to-br from-[#00084e] via-[#000000] to-[#01014a] opacity-100 blur-xl   group-hover:opacity-70 transition-opacity duration-500"></div>
+    <div className="absolute -inset-1 bg-linear-to-br from-[#00121e] via-[#474c4c] to-[#011f31] opacity-100 blur-xl   group-hover:opacity-70 transition-opacity duration-500"></div>
     
     <div className="relative overflow-hidden shadow-2xl py-4">
       <motion.img 
