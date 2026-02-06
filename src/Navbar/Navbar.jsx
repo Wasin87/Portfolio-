@@ -76,16 +76,16 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`tech-nav fixed top-0 left-0 right-0 z-50 transition-transform duration-500 ${show ? "translate-y-0" : "-translate-y-full"}`}
+            className={`tech-nav fixed top-0 left-0 right-0 z-50 transition-transform duration-500 ${show ? " " : " "}`}
         >
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center justify-between py-3">
                     {/* Logo/Brand */}
                     <div className="navbar-start flex items-center gap-3">
-                        <img src={logo} className='w-16 h-16 rounded-full object-cover border border-[#57cbff]' alt="Logo" />
+                        <img src={logo} className='w-16 h-16 rounded-full object-cover  ' alt="Logo" />
                         <h1 
                             data-aos="fade-right"
-                            className="text-2xl md:text-3xl cursor-pointer flex group select-none font-name2"
+                            className="text-xl md:text-3xl cursor-pointer flex group select-none font-name2"
                         >
                             <span className="tech-wave group">
                                 <span className="wave">M</span>
@@ -110,9 +110,9 @@ const Navbar = () => {
                     <div className="navbar-end lg:hidden">
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="tech-btn p-3"
+                            className=" border-[#57cbff] rounded-2xl p-2 hover:bg-[#57cbff]/10 transition-colors duration-300"
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#57cbff]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#57cbff]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
                             </svg>
                         </button>

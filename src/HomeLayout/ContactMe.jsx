@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { FaPhoneAlt, FaEnvelope, FaLocationArrow } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
-import img from '../assets/logo2.png';
+import img from '../assets/logoC.png';
 import { IoIosSend, IoLogoWhatsapp } from "react-icons/io";
 import { PiPlugsConnectedFill } from "react-icons/pi";
 import { useInView } from "react-intersection-observer";
