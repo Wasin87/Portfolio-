@@ -13,27 +13,57 @@ const Certificate = () => {
     });
 
     const certificates = [
+
         {
-            id: 1,
+    id: 1,
+    title: "Full Stack Web Development Course",
+    issuer: "Programming Hero Institute",
+    date: "December 2025",
+    description: "Professional certification in Full Stack Web Development covering modern frontend and backend technologies. The program focused on building scalable web applications, RESTful APIs, database management, authentication systems, and deploying production-ready applications using modern development tools and frameworks.",
+    image: "https://i.ibb.co.com/r25dWSqF/Screenshot.png",
+    skills: [
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Next.js",
+        "Vibe Coding",
+        "Git",
+        "GitHub",
+        "Stripe",
+        "Firebase",
+        "Vercel",
+        "Netlify"
+    ],
+    certificateId: "PH-WD-2025-001",
+    validity: "Lifetime",
+    category: "Full Stack Development"
+},
+        {
+            id: 2,
             title: "Algorithm Programming Contest",
             issuer: "Daffodil International University",
             date: "December 2023",
             description: "Algorithm Programming Contest certification covering C, C++, Java, Python and modern development tools. Completed multiple real-world projects with Programming implementation.",
             image: "https://i.ibb.co.com/HDFCP7yC/Certificate.jpg",
             skills: ["C, C++, Java, Python "],
-            certificateId: "APC-2023-001",
+            certificateId: "APC-2023-002",
             validity: "Lifetime",
             category: "Programming Contest"
         },
         {
-            id: 2,
+            id: 3,
             title: "Responsive Web Design Mastery",
             issuer: "Web Development Institute",
             date: "November 2023",
             description: "Advanced certification in responsive web design, modern CSS techniques, and cross-browser compatibility. Focused on creating pixel-perfect, mobile-first responsive layouts.",
             image: "https://i.ibb.co.com/fdHzxSmk/Screenshot-2025-12-03-200605.png",
             skills: ["HTML5", "CSS3", "Responsive Design", "Flexbox", "Grid", "Media Queries"],
-            certificateId: "RWD-2023-002",
+            certificateId: "RWD-2023-003",
             validity: "Lifetime",
             category: "Frontend Development"
         }
